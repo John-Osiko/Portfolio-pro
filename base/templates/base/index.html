@@ -1,0 +1,281 @@
+{% extends 'base/main.html' %}
+{% load static %}
+
+{% block content %}
+<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<h1>Hi, I'm John Osiko</h1>
+			</div>
+
+
+			<div class="intro-wrapper">
+				{% include 'base/navbar.html' %}
+
+				<div class="left-column">
+					<img id="profile_pic" src="{% static 'images/prof_holder.jpeg' %}">
+					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+
+					<div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+					</div>
+
+					<p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+				</div>
+
+				<div class="right-column">
+
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>What I Do</h3>
+							<p>I am an enthusiast developer who creates fantasies using codes.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container">
+
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>More about me</h4>
+
+					<p>John Osiko is a junior software developer who recently graduated from Moringa School.</p>
+
+					<p>While I keep keep my head out to learn new skills, I still have the constant need to want to perfect the skills I already have, build projects that interest me & also those that race the market competition.</p>
+					
+					<p>When he isn't glued to the computer, he spends his time capturing the beauty of nature by photography, singing and trying very hard not to be the worst swimmer in the Rockies<i class="fas fa-grin-beam"></i>.</p>
+
+					<hr>
+
+					<h4>TOP EXPERTISE</h4>
+
+					<p>Fullstack developer with primary focus on Django + Angular: <a target="_blank" href="https://docs.google.com/document/d/1HYiJar9-ocHaMikjvvuWL7JANufFQBgTfbHp7UDFkrg/edit">Download Resume</a></p>
+
+					<div id="skills">
+						<ul>
+							<li>Python</li>
+							<li>Django</li>
+							<li>Angular</li>
+							<li>Postgres</li>
+						</ul>
+
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>Heroku</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				
+				<div class="social-links">
+					<img id="social_img" src="{% static 'images/son_of_a_gun.png' %}">
+					<h3>Find me on Twitter</h3>
+					<br>
+					<a target="_blank" href="https://twitter.com/osiko_john" class="rounded-circle fit-content">Twitter: @osiko_john</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="s1">
+		<div class="main-container">
+			<h3 style="text-align: center;">Some of my past projects</h3>
+			<div class="row text-center">
+    
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay zoom rounded z-depth-1">
+                            <img  class="img-fluid" src="{% static 'images/hostel.png' %}" alt="My project image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">Hostel Management System</h4>
+                            <p class="d-flex">Hostel management system is a web application that is aimed at helping in online booking of hostels.</p>
+                            <a class="btn btn-rounded btn-sm"  id="submit-btn" href="https://richardkefa.github.io/hostel-managment/" target="_blank" ><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay zoom rounded z-depth-1">
+                            <img  class="img-fluid" src="{% static 'images/myQuotes.png' %}" alt="My project image">
+                            <a >
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">MyQuotes</h4>
+                            <p class="d-flex"> This is a website the helps to learn more from quotes and enables you to create and post a quote in the web app.</p>
+                            <a  class="btn btn-rounded btn-sm"  id="submit-btn" href="https://john-osiko.github.io/Osyko-Core-IP1/" target="_blank"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6">
+                        <!--Featured image-->
+                        <div class="view overlay zoom rounded z-depth-1">
+                            <img  class="img-fluid" src="{% static 'images/news.png' %}" alt="My project image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">CatchMyNews</h4>
+                            <p class="d-flex">CatchMyNews is a web application where users can get newws updates and also view news articles on different categories.</p>
+                            <a class="btn btn-rounded btn-sm"  id="submit-btn" href="https://catchmynews.herokuapp.com/" target="_blank"><i class="fa fa-clone left"></i> View project</a>
+                        
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+    
+                </div>
+                <!-- Grid row -->
+    
+            </div>
+            <!-- Container -->
+             <!-- Container -->
+			<div class="post-wrapper">
+				{% for post in posts %}
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="{{post.thumbnail.url}}">
+						<div class="post-preview">
+							<h6 class="post-title">{{post.headline}}</h6>
+							<p class="post-intro">{{post.sub_headline}}</p>
+							<a href="{%  url 'post' post.slug %}">Read More</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+
+			<p align="center">
+				<a href="{% url 'posts' %}">View More</a>
+			</p>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container" id="contact">
+			<a href=""></a>
+			<h3 style="text-align: center;">Get In Touch</h3>
+			<div class="container ">
+            <div class="row " class="ml-4">
+    
+            <!--Grid column-->
+                
+                <div class="col-md-12 text-center">
+    
+                    <!--First row-->
+                    <div class="row">
+                        <div class="col-1 ">
+                         
+                        </div>
+                        <div class="col-10">
+                            <h5 class="feature-title"><i class="fa fa-envelope-open"></i> Email</h5>
+                            <p class="grey-text">johnmaxosiko@gmail.com</p>
+                        </div>
+                    </div>
+                    <!--/First row-->
+        
+                    <div style="height:30px"></div>
+        
+                    <!--Second row-->
+                    <div class="row">
+                        <div class="col-1 ">
+                
+                        </div>
+                        <div class="col-10">
+                            <h5 class="feature-title"><i class="fa fa-phone"></i> Mobile</h5>
+                            <p class="grey-text">(+254) 775 506557, (+254) 721 879293</p>
+                        </div>
+                    </div>
+                    <!--/Second row-->
+        
+                    <div style="height:30px"></div>
+        
+                    {% comment %} <!--Third row-->
+                    <div class="row">
+                        <div class="col-1 ">
+            
+                        </div>
+                        <div class="col-10">
+                            <h5 class="feature-title" >Go to my.... </h5><br>
+                            <div class="social-icon">
+									<div class="social-item">
+										<a href="https://github.com/John-Osiko"><img src="https://img.icons8.com/bubbles/50/000000/github.png"/></a>
+									</div>
+									<div class="social-item">
+										<a href="https://twitter.com/osiko_john"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+									</div>
+									<div class="social-item">
+										<a href="/"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+									</div>
+							</div>
+                        </div>
+                    </div>
+                    <!--/Third row--> {% endcomment %}
+    
+                </div>
+            <!--/Grid column-->
+    
+            <!--Grid column-->
+       
+            <!--/Grid column-->
+    
+            </div>
+            <div class="footer-copyright py-3"style="text-align:center;">
+                <span>© 2020 Copyright:</span>
+                <span>John Osiko</span>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+			{% comment %} <form id="contact-form" method="POST" action="{% url 'send_email' %}">
+				{% csrf_token %}
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input required class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input required class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input required class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea required class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form> {% endcomment %}
+		</div>
+	</section>
+{% endblock content %}
